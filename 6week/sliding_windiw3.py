@@ -1,22 +1,21 @@
 """https://leetcode.com/problems/find-all-anagrams-in-a-string/description/?envType=problem-list-v2&envId=sliding-window"""
 
 
-def findAnagrams(s: str, p: str) -> list[int]:
-    if len(p) > len(s):
-        return []
-    str = ""
-    listic = []
+class Solution:
+    def findAnagrams(self, s: str, p: str) -> list[int]:
 
-    p = sorted(p)
-    print(p)
+        if len(p) > len(s):
+            return []
+        str = ""
+        listic = []
 
-    for i in range(0, len(s) - len(p) + 1):
+        p = sorted(p)
+        print(p)
 
-        str = sorted(s[i : i + len(p)])
+        for i in range(0, len(s) - len(p) + 1):
 
-        if str == p:
-            listic.append(i)
-    return listic
+            str = sorted(s[i : i + len(p)])
 
-
-print(findAnagrams("cbaebabacd", "abc"))
+            if str == p:
+                listic.append(i)
+        return listic
