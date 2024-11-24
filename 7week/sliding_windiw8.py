@@ -27,4 +27,4 @@ class Solution:
         return count
 
 
-# print(count_good_subarrays([3, 1, 4, 3, 2, 2, 4], 2))  # Вывод: 4
+# print(count_good_subarrays([3, 1, 4, 3, 2, 2, 4], 2))
