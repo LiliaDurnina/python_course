@@ -41,5 +41,7 @@ class Solution:
                 l += 1
 
             r += 1
-
-        return s[min_left:min_right] if min_len != len(s) + 1 else ""
+        if min_len != len(s) + 1:
+            return s[min_left:min_right]
+        else:
+            return ""
