@@ -13,6 +13,3 @@ class Solution:
                     response += 1
 
         return response
-
-
-# print(divisorSubstrings(2, 1))

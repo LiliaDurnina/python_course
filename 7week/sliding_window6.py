@@ -18,6 +18,3 @@ class Solution:
                 response += 1
 
         return response
-
-
-# print(numOfSubarrays([2, 2, 2, 2, 5, 5, 5, 8], 3, 4))
